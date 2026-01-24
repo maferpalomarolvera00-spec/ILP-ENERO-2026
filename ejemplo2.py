@@ -1,5 +1,5 @@
 #Operaciones Matemáticas Básicas
-
+import math
 #ENTRADAS DE DATOS
 #= asignación simple
 #Declaración de variables
@@ -14,8 +14,11 @@ resta = numero1 - numero2
 multiplicacion = numero1 * numero2
 division = numero1 / numero2
 potencia = numero1 ** numero2
+PotenciaP = pow(numero1, numero2)
 raizCuadrada1 = numero1 ** 0.5
 raizCuadrada2 = numero2 ** 0.5
+raizCuadradaL = math.sqrt(numero1)
+raizCuadradaL2 = math.sqrt(numero2)
 raizCubica1 = numero1 ** (1/3)
 raizCubica2 = numero2 ** (1/3)
 modulo = numero1%numero2 
