@@ -1,9 +1,10 @@
 #Calcular la nomina para un empleado en el mes de Mayo del 2023 cocociendo su pago por día de $250
 #ENTRADA
-pagoDia = 300
+dias = int(input("Ingrese los dias: "))
+pagoDia = float(input("Ingresa el pago por dia: "))
 
 #PROCESO
-pagoBase = pagoDia*31
+pagoBase = pagoDia*dias
 ivaTrasladado = pagoBase*0.16
 subtotal=pagoBase+ivaTrasladado
 ivaRetenido = (2/3)*ivaTrasladado
