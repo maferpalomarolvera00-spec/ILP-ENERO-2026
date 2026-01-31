@@ -8,7 +8,12 @@ cal2 = float(input("Ingrese la segunda calificacion: "))
 cal3 = float(input("Ingrese la tercera calificacion: "))
 
 #PROCESO
-promedio = (cal1+cal2+cal3)/3
+while ((cal1<0 or cal1>10) or (cal2<0 or cal2>10) or (cal3<0 or cal3>10)):
+    print("-----------------CALIFICACIONES-----------------")
+    cal1 = float(input("Ingrese la primera calificacion: "))
+    cal2 = float(input("Ingrese la segunda calificacion: "))
+    cal3 = float(input("Ingrese la tercera calificacion: "))
+    promedio = (cal1+cal2+cal3)/3
 
 
 if (promedio > 6 and promedio <=10):
