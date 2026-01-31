@@ -10,13 +10,14 @@ cal3 = float(input("Ingrese la tercera calificacion: "))
 #PROCESO
 promedio = (cal1+cal2+cal3)/3
 
+
 if (promedio > 6 and promedio <=10):
     print(Fore.GREEN + "Aprobado"+ Style.RESET_ALL)
 elif (promedio <6 and promedio >=0):
     print(Fore.RED +"Reprobado" +Style.RESET_ALL)
 elif promedio==6:
     print(Fore.YELLOW+"Apenas aprobado"+Style.RESET_ALL)
-elif (promedio<0 and promedio>10):
+elif (promedio<0 or promedio>10):
     print("Calificacion invalida")
 else:
     print("Error")
